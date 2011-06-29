@@ -1,5 +1,6 @@
 package com.nectify.tapestry.hornet.components;
 
+import org.apache.tapestry5.BindingConstants;
 import org.apache.tapestry5.MarkupWriter;
 import org.apache.tapestry5.annotations.Parameter;
 import org.apache.tapestry5.ioc.annotations.Inject;
@@ -34,19 +35,19 @@ public class HornetListener {
 	/**
 	 * The name of channel to open a connection with.
 	 */
-	@Parameter(required = true)
+	@Parameter(required = true, defaultPrefix = BindingConstants.LITERAL)
 	private String channel;
 
 	/**
 	 * The event to listen to.
 	 */
-	@Parameter(required = true)
+	@Parameter(required = true, defaultPrefix = BindingConstants.LITERAL)
 	private String event;
 
 	/**
 	 * The javascript handler method to callback on event.
 	 */
-	@Parameter(required = true)
+	@Parameter(required = true, defaultPrefix = BindingConstants.LITERAL)
 	private String handler;
 
 	/**
