@@ -1,11 +1,26 @@
-# Tapestry 5 Hornet Java Connector Integration
+# Tapestry 5 - Hornet Connector Integration
 
-## Description
+This is the Tapestry Integration of [Hornet](https://github.com/nectify/hornet) realtime engine.
 
-[Hornet](https://github.com/nectify/hornet) is a realtime engine that let you enhance your web application by connecting users together. [Hornet](https://github.com/nectify/hornet) is a publish/suscribe system extremely easy to use, secure and scalable. Well, [Hornet](https://github.com/nectify/hornet) will integrates very well your own existing application, no matter what language or framework you're using.
+[Hornet](https://github.com/nectify/hornet) is a realtime engine that let you enhance your web application by connecting users together. 
+Hornet is meant to be used next to your own existing application, no matter what language or framework you're using, by using connectors.
 
-[Hornet](https://github.com/nectify/hornet) is powered by NodeJs, Socket.io and is backed by Redis.
+Hornet is powered by NodeJs, Socket.io and is backed by Redis.
 
-The current library is a connector, a piece of software that will make your Tapestry 5 application able to talk with [Hornet](https://github.com/nectify/hornet). See Hornet README for the connector specification
+See [Hornet](https://github.com/nectify/hornet) README for more information about Hornet and the connector specification
 
-See [Hornet-Connector-Java](https://github.com/nectify/hornet-connector-java) for more informations
+
+## Connector Installation
+
+Add the following dependency in your pom.xml file:
+
+	<dependency>
+		<groupId>com.nectify</groupId>
+		<artifactId>hornet-connector-java</artifactId>
+		<version>X.Y.Z</version>
+	</dependency>
+
+
+## License
+
+This project is distributed under Apache 2 License. See LICENSE.txt for more information.

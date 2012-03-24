@@ -2,15 +2,46 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.nectify</groupId>
+	<groupId>com.spreadthesource</groupId>
 	<artifactId>tapestry5-hornet</artifactId>
 	<version>1.0-SNAPSHOT</version>
-	<name>tapestry-hornet-test Tapestry 5 Application</name>
+	<name>Tapestry 5 Hornet Integration</name>
+	
+	<parent>
+		<groupId>org.sonatype.oss</groupId>
+		<artifactId>oss-parent</artifactId>
+		<version>7</version>
+	</parent>
+
+	<licenses>
+		<license>
+			<name>The Apache Software License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+	
+	
+	<developers>
+		<developer>
+			<id>ccordenier</id>
+			<name>Christophe Cordenier</name>
+			<email>christophe.cordenier@gmail.com</email>
+		</developer>
+		
+		<developer>
+			<id>robink</id>
+			<name>Robin Komiwes</name>
+			<email>robin.komiwes@gmail.com</email>
+		</developer>
+	</developers>
+	
+	
 	<dependencies>
 		<dependency>
 			<groupId>com.nectify</groupId>
 			<artifactId>hornet-connector-java</artifactId>
-			<version>0.1.1-SNAPSHOT</version>
+			<version>0.3.0</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.tapestry</groupId>
@@ -58,7 +89,7 @@
 
 	</dependencies>
 	<build>
-		<finalName>tapestry-hornet-test</finalName>
+		<finalName>tapestry5-hornet</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -133,6 +164,6 @@
 	</pluginRepositories>
 
 	<properties>
-		<tapestry-release-version>5.2.5</tapestry-release-version>
+		<tapestry-release-version>5.3.2</tapestry-release-version>
 	</properties>
 </project>
