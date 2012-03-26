@@ -24,10 +24,9 @@ public class HornetModule {
 	public void contributeFactoryDefaults(
 			MappedConfiguration<String, String> configuration) {
 		configuration.add(HornetSymbols.REDIS_HOST, "localhost");
-		configuration.add(HornetSymbols.REDIS_PORT, "80");
+		configuration.add(HornetSymbols.REDIS_PORT, "6379");
 		configuration.add(HornetSymbols.TTL, "120");
-		configuration.add(HornetSymbols.HORNET_HOST, "localhost");
-		configuration.add(HornetSymbols.HORNET_PORT, "80");
+		configuration.add(HornetSymbols.HORNET_URI, "http://localhost:8187");
 	}
 
 	public static void contributeComponentClassResolver(

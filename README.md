@@ -12,6 +12,12 @@ See [Hornet](https://github.com/nectify/hornet) README for more information abou
 
 ## Connector Installation
 
+Requires:
+
+- redis
+- hornet 0.3.x
+- Tapestry 5.3.x
+
 Add the following dependency in your pom.xml file:
 
 	<dependency>
