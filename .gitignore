@@ -1,5 +1,6 @@
 .springBeans
 test-output/
+pom.xml.releaseBackup
 .settings/
 .project
 .classpath
